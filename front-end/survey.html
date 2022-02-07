@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js" defer></script>
+    <title>Registraion Form</title>
+  </head>
+  <body>
+    
+    <div >  
+    <div style="width:clamp(50px, 10%, 50px);margin-left:20;"> 
+      <button id="logout" class="log log-next width-100 ml-auto" style="font-size: 14px;margin-right:20%;">logout</button>
+    </div>
+
+    <form action="#" class="form">
+      <h1 class="text-center">Registration Form</h1>
+      <!-- Progress bar -->
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        <div id="progress1" class="progress-step" data-title="Video games"></div>
+        <div id="progress2" class="progress-step" data-title="TV"></div>
+        <div id="progress3" class="progress-step" data-title="Sport"></div>
+     
+      </div>
+
+      <!-- Steps -->
+      
+      <div  id="question1" class="form-step">
+        <div class="input-group">
+          <label for="games">Have you played Video Games today ?</label>
+              <select name="games" id="games" style="padding-right: 20%; position: relative;" >
+                <option value="null">---</option>
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+                <option value="later">later</option>
+              </select>
+        </div>
+        <div class="">
+          <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+        </div>
+      </div>
+
+
+      <div id="question2" class="form-step">
+        <div class="input-group">
+          <label for="phone">Have you watched TV today ?</label>
+          <select name="tv" id="tv" style="padding-right: 20%; position: relative;" >
+            <option value="null">---</option>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+            <option value="later">later</option>
+          </select>
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+
+
+      <div id="question3" class="form-step">
+        <div class="input-group">
+          <label for="dob">Have you played your favorite sport today ?</label>
+          <select name="sport" id="sport" style="padding-right: 20%; position: relative;" >
+            <option value="null">---</option>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+            <option value="later">later</option>
+          </select>
+        </div>
+        <div class="btns-group">
+            <a href="#" class="btn btn-prev">Previous</a>
+            <input id="submit" type="button" value="Submit" class="btn" />
+          </div>
+      </div>
+    </form>
+  </div>
+  </body>
+</html>
