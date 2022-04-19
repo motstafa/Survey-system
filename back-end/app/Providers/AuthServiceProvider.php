@@ -2,18 +2,23 @@
 
 namespace App\Providers;
 
+use App\Models\Role;
+use App\Models\Survey;
+use App\Policies\RolePolicy;
+use App\Policies\SurveyPolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
-use Illuminate\Support\Facades\Gate;
 
 class AuthServiceProvider extends ServiceProvider
 {
     /**
      * The policy mappings for the application.
      *
-     * @var array
+     * @var array<class-string, class-string>
      */
     protected $policies = [
-        // 'App\Model' => 'App\Policies\ModelPolicy',
+//        Survey::class => SurveyPolicy::class,
+        Role::class => RolePolicy::class,
+        Survey::class => SurveyPolicy::class,
     ];
 
     /**
